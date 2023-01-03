@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap');
+
+:root {
+    --fonte: font-family: 'Karla', sans-serif;
+    --tamanho-da-fonte: 16px;
+
+    --cor-primaria: hsl(179, 62%, 43%);
+    --cor-secundaria: hsl(71, 73%, 54%);
+    --cor-tercearia: hsl(204, 43%, 93%);
+    --cor-cinza: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte);
+    font-size: var(--tamanho-da-fonte);
+}
+
+body {
+    background-color: #E6EFF6;
+}
+
+main {
+    margin: 2em 1em 2em 1em;
+    border-radius: .2em;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.explicacao {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.explicacao_titulo {
+    color: var(--cor-primaria);
+}
+
+.explicacao_subtitulo {
+    color: var(--cor-secundaria);
+    margin-top: 1em;
+}
+
+.explicacao_texto {
+    color: var(--cor-cinza);
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+.copy {
+    background-color: #2BB3B1;
+}
+
+.copy_titulo {
+    color: var(--cor-tercearia);
+    margin: 1em;
+}
+
+.copy_preco {
+    color: var(--cor-tercearia);
+    margin-left: 1rem;
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.copy_preco>span {
+    margin-left: 1em;
+    font-size: .4em;
+    font-weight: 400;
+}
+
+.copy_texto {
+    margin-left: 1em;
+    margin-bottom: 2em;
+    color: var(--cor-tercearia);
+}
+
+.copy_texto>span {
+    font-weight: 700;
+}
+
+.copy_botao {
+    margin: 0 auto 1em auto;
+    width: 90%;
+    height: 2em;
+    color: var(--cor-tercearia);
+    background-color: var(--cor-secundaria);
+    border-style: none;
+    border-radius: .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy_botao:hover {
+    background-color: #a0bf16;
+    transition: .3s;
+    font-weight: 700;
+}
+
+.why-us {
+    background-color: #4ABEBD;
+    padding: 1em;
+    color: var(--cor-tercearia);
+    border-radius: 0 0 .2em .2em;
+}
+
+.why-us_titulo {
+    margin-bottom: 1em;
+}
+
+.why-us_lista {
+    list-style: none;
+}
+
+.why-us_lista__item {
+    padding: .1em 0;
+}
+
+footer>p,footer>p>a {
+    font-size: 8px;
+    text-align: center;
+}
